@@ -1,4 +1,4 @@
-name: Build workshop
+name: python workshop
 
 on:
   repository_dispatch:
