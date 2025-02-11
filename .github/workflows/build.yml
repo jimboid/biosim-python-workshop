@@ -1,5 +1,4 @@
-name: python workshop
-
+name: build
 on:
   repository_dispatch:
     types: [build]
