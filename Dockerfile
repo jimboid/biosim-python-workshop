@@ -12,9 +12,8 @@ USER $NB_USER
 WORKDIR $HOME
 
 # Install workshop deps
-RUN conda install mdtraj matplotlib numpy pandas -y
-RUN conda install ipywidgets -c conda-forge -y
-RUN conda install nglview
+RUN conda install matplotlib numpy pandas nglview ipywidgets -y
+RUN pip install mdtraj
 
 # Get workshop files and move them to jovyan directory.
 RUN git clone https://github.com/CCPBioSim/python-and-data-workshop.git && \
